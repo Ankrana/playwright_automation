@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: checkout repository
       uses: actions/checkout@v4
-    - uses: setup Node.js
+    - name: setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20
