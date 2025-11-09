@@ -3,6 +3,6 @@ import { test, expect } from '@playwright/test';
 test("Verify page title", async ({page}) => {
 
 await page.goto('https://www.google.com');
-await expect (page).toHaveTitle(/Yahoo/);
+await expect (page).toHaveTitle(/Google/);
 
 })
