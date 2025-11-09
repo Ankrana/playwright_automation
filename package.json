@@ -1,15 +1,21 @@
 {
   "name": "playwright_automation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright Automation Framework with CI/CD",
   "main": "index.js",
-  "scripts": {},
+ "scripts": {
+    "test": "npx playwright test",
+    "build": "echo 'No build step needed for Playwright-only project'",
+    "start": "echo 'No server to start for Playwright-only project'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.0"
+    "@types/node": "^24.10.0",
+    "wait-on": "^7.2.0",
+    "serve": "^14.2.1"
   }
 }
